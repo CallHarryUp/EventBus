@@ -1,6 +1,7 @@
 EventBus
 ========
 EventBus is publish/subscribe event bus optimized for Android.<br/>
+EventBus 是安卓系统上一个优秀的事件总线处理机制。
 <img src="EventBus-Publish-Subscribe.png" width="500" height="187"/>
 
 EventBus...
@@ -17,6 +18,22 @@ EventBus...
 
  [![Build Status](https://travis-ci.org/greenrobot/EventBus.svg?branch=master)](https://travis-ci.org/greenrobot/EventBus)
 
+
+EventBus...
+
+ * 简化了组件之间的通信
+    * 使事件发送者和接收者解耦
+    * 可以很好的在 Activities, Fragments, and background threads(后台线程) 中执行
+    * 避免了复杂和容易出错的依赖以及生命周期问题
+ * 使你的代码更简单
+ * 速度快
+ * 体积小 (<50k jar)
+ * 目前已经在 100,000,000 个以上的APP中使用该功能
+ * 拥有先进的功能，例如：传递线程，用户优先权 等...
+
+
+ [![Build Status](https://travis-ci.org/greenrobot/EventBus.svg?branch=master)](https://travis-ci.org/greenrobot/EventBus)
+
 EventBus in 3 steps
 -------------------
 1. Define events:<br/>
@@ -26,6 +43,18 @@ EventBus in 3 steps
 <code>public void onEvent(AnyEventType event) {/* Do something */};</code><br/><br/>
 3. Post events:<br/>
 <code>eventBus.post(event);</code>
+
+
+使用步骤:
+-------------------
+1. 定义事件(Event):<br/>
+<code>public class MessageEvent { /* Additional fields if needed */ }</code><br/><br/>
+2. 准备订阅:<br/>
+<code>eventBus.register(this);</code><br/>
+<code>public void onEvent(AnyEventType event) {/* Do something */};</code><br/><br/>
+3. 发布事件:<br/>
+<code>eventBus.post(event);</code>
+
 
 Add EventBus to your project
 ----------------------------
