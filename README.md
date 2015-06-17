@@ -1,6 +1,6 @@
 EventBus
 ========
-#### 该说明文件为个人翻译版，水平有限，可能会出翻译错误，疑问可以参考[【英文版】](https://github.com/GcsSloop/EventBus/blob/master/README%20-%20EN.md)
+#### 该说明文件为个人翻译版，水平有限，可能部分内容翻译错误，疑问可以参考[【英文版】](https://github.com/GcsSloop/EventBus/blob/master/README%20-%20EN.md)
 
 EventBus 是安卓系统上一个优秀的事件总线处理机制。
 <img src="EventBus-Publish-Subscribe.png" width="500" height="187"/>
